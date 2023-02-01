@@ -13,13 +13,12 @@ function App() {
     },
     {
       path: `/details/:id`,  
-      
       loader: ({params})=> fetch(`https://jsonplaceholder.typicode.com/users/${params.id}`).then(res=>res.json()),
       element: <Details />
     }
   ])
   return (
-    <div className="App">
+    <div className="">
       <RouterProvider router={route}></RouterProvider>
     </div>
   );

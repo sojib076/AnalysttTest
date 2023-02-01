@@ -25,7 +25,7 @@ const Home = () => {
                                 <div className='flex flex-col '> <span className='font-bold'> Contract </span>  {user.name}</div>
                                 <div className='flex flex-col'> <span className='font-bold'> City </span>  {user.address.city}</div>
                                 <div className='flex flex-col'> <span className='font-bold'> State </span>  {user.address.street}</div>
-                                <Link to={`/details/${user.id}`} className='bg-red-500 text-white p-2 rounded-md'>More Info</Link>
+                                <Link to={`/details/${user.id}`} className='bg-red-500 text-white p-2 rounded-md w-[50%] text-center'>More Info</Link>
                             
                             </div>
                       
